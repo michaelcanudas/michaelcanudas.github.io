@@ -51,7 +51,6 @@
                 </p>
             </div>
         </div>
-        <div class="footer"></div>
     </div>
 </body>
 
@@ -89,34 +88,31 @@
         height: 100vh;
 
         grid-template-columns: 1fr;
-        grid-template-rows: 12rem 28rem 28rem 12rem;
+        grid-template-rows: 12rem 28rem 28rem;
         grid-template-areas: 
             "h"
             "o"
-            "t"
-            "f";
+            "t";
     }
     
     @media (min-width: 801px) {
         .main {
             grid-template-columns: 1fr;
-            grid-template-rows: 12rem 32rem 32rem 12rem;
+            grid-template-rows: 12rem 32rem 32rem;
             grid-template-areas: 
                 "h"
                 "o"
-                "t"
-                "f";
+                "t";
         }
     }
 
     @media (min-width: 1281px) {
         .main {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 16rem 1fr 16rem;
+            grid-template-rows: 16rem 1fr;
             grid-template-areas: 
                 "h h"
-                "o t"
-                "f f";
+                "o t";
         }
     }
 
@@ -246,10 +242,6 @@
         .two-content-body {
             width: 32rem;
         }
-    }
-
-    .footer {
-        grid-area: f;
     }
 </style>
 
